@@ -8,48 +8,66 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<style>
 		body{
-			padding: 110px 0;
+			padding-top: 110px;
+			background-color: rgba(238,238,238,0.5);
 		}
 		.logo img{
-			width: 100px;
+			width: 120px;
+		}
+		form input{
+			margin-bottom: 10px;
 		}
 	</style>
 </head>
 <body>
 	<div class="container">
-		<div class="row logo">
-			<img class="center-block" src="images/logo.PNG" alt="">
-		</div>
-		<div class="row title center-block">
-			<h2 class="">Floating labels</h2>
-			<p style="font-size: larger;">Build form controls with floating labels via the <br>
-				<code style="background-color: white;">:placeholder-shown</code> pseudo-element. <a href="">Works in latest <br>
-				Chrome, Safari, and Firefox.</a></p>
-		</div>
-		<form action="">
-			<div class="form-group" >
-				<input type="text" class="form-control" placeholder="Email address">
-			</div>
-			<div class="form-group" >
-				<input type="text" class="form-control" placeholder="Password">
-			</div>
-			<div class="form-group">
-				<div>
-					<label>
-						<input type="checkbox">Remember me
-					</label>
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3" style="padding: 0">
+				<div class="row logo">
+					<img class="center-block" src="images/logo.PNG" alt="">
 				</div>
-			</div>
-			<div class="form-group">
-				<div>
-					<button type="submit" class="btn btn-primary">Sign in</button>
+				<div class="row title center-block" style="text-align: center; margin-bottom: 20px;">
+					<h2 class="">Floating labels</h2>
+					<p style="font-size: larger;">Build form controls with floating labels via the <br>
+						<code style="background-color: rgba(238,238,238,0.5);">:placeholder-shown</code> pseudo-element. <a href="">Works in latest <br>
+						Chrome, Safari, and Firefox.</a></p>
 				</div>
+
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<form action="">
+							<input type="text" class="form-control input-lg" placeholder="Email address">
+								<div class="form-group" >
+									<input type="text" class="form-control input-lg" placeholder="Password">
+								</div>
+								<div class="form-group">
+									<div>
+										<label>
+											<input type="checkbox"> Remember me
+										</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<div>
+										<button type="submit" class="btn btn-primary btn-block btn-lg">Sign in</button>
+									</div>
+								</div>
+						</form>
+						</div>
+					</div>
 			</div>
-		</form>
-		<address>
-			© 2017-2018
-		</address>
+			
+			</div>
+		</div>
+		
+		<div class="row" style="margin-top: 50px;">
+			<address class="text-muted" style="text-align: center; font-size: larger;">
+				© 2017-2018
+			</address>
+		</div>
 	</div>
+
+
 	<script src="js/jquery-3.3.1.js"></script>
 	<script src="js/bootstrap.js"></script>
 </body>
